@@ -1,0 +1,160 @@
+.layout-header {
+    background-color: #fff;        
+    height: 30px;
+    margin-top: 20px;
+    padding-bottom: 31px;
+    padding-top: 10px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+
+    span {
+        font-size: 30px;
+        color: #2F2F2F;
+    }
+    .navHome {
+        color: #B19B71;        
+        position: absolute;
+        left: 10px;
+        top: 15px;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAWCAMAAADO+P1vAAAAQlBMVEWxm1e1oGC1oWG6p2u6p2y/rXbEs4DEtIHJuovOwJXOwJbTxqDYzarYzavd07Xi2b/n4Mrr5tXw7N/18ur6+fT///86tHwpAAAAXklEQVR42mXOSxKAMAgDUGhFrb9W2tz/qo4DuJHVW2QSCH56BkeaySUynCt3GAsrjBc1GCtVGDUVGEOgt8YpeSA4fRz5C0B5C+Ims08EcVALoiQNQlLH/3V0XoLQ/QE5/g9CnkFLNwAAAABJRU5ErkJggg==) no-repeat scroll left center transparent;
+        padding-left: 15px;
+        cursor: pointer;
+    }
+}
+.layout-content {
+    overflow: hidden;
+    padding: 5px;
+    
+    .imgWrapper{
+        width: 100%;
+        position: relative;
+        float: left;
+        background-color: #fff;
+        margin: 5px;
+
+        img {
+            margin: 0 auto;
+            display: block;
+        }
+
+        @media screen and (min-width : 1024px) {
+            width:33.33%;
+            height: 390px;
+            display: flex;
+            justify-content: center;
+
+            img {
+                align-self: center;
+            }
+        }
+
+        .favourite {        
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            .heart {
+                width: 20px;
+                height: 20px;
+                z-index: 1;
+                background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAAQlBMVEW6p2u/rXbEs4DEtIHJuovOwJXOwJbTxqDTx6DYzarYzavd07Xd07bi2b/i2sDn4Mrn4Mvr5tXw7N/18ur6+fT///8abmIKAAAAlklEQVR4AWXN4W6DUAhAYWDXOnvHLFzO+7/qklZrdecX+QhBoB73n8Gz8Xt/AMKqPXxqBfXdesyaSFoBrAbqAKUpbbv0eX4aZBNjy96THBjjvRblWpn4csXFBa2zlSJEO2MLBOb+aX0BAdp62Np4YVnullYbMvZnpYMdia8XanAgfgO4OZ/I5NAnzohFGFcss/qHZLL3B6wFHIHmy1IvAAAAAElFTkSuQmCC);
+            }
+            .heart:hover {
+                opacity: 0.5;
+            }
+        }
+        .favourite.active {
+            .heart {
+                background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAAS1BMVEWxm1e1oGC1oWG6p2u6p2y/rXbEs4DEtIHJuovOwJXOwJbTxqDTx6DYzarYzavd07Xi2b/i2sDn4Mvr5tXs5tXw7N/18ur6+fT///9Odpc7AAAAf0lEQVR4AY3NSxKCMBgE4eHxK4giGkL6/icVDCkguLBXU99mBIz9a+Lb9O5HQLhSc7cA3JdVezQpZnCNq/RqtNZ1aTWq9W/2i4aTzRSq3CqEy9Eh6I72YEEue2uIGGwzCyvii2SFJyFuO9mQIdqTPdIu1nJETDJyDJWFE+I9qQ8ovg9qjSq4wQAAAABJRU5ErkJggg==);
+            }
+        }
+    }
+    .infoWrapper,
+    .descWrapper {
+        width: calc(100% - 20px);
+        float: left;
+        margin: 5px;        
+        background-color: #fff;
+
+        .info {
+            padding: 20px;
+            width: calc(100% - 40px);            
+            float: left;
+            color: #646467;
+            
+            div {
+                width: 100%;
+            }
+        }
+
+        @media screen and (min-width : 1024px) {
+            width: calc(66.66% - 20px);
+
+            .info {         
+                display: flex;
+                justify-content: center;
+            }
+            .info > div {
+                align-self: center;
+            }
+        }
+    }
+    .infoWrapper {
+        .info {
+            @media screen and (min-width : 1024px) {
+                height: 112px;
+            }
+            .title {
+                font-size: 22px;
+                padding-bottom: 10px;
+                color: #000;
+            }
+            .price {
+                font-size: 18px;
+                padding-bottom: 10px;
+            }
+            .measurements {
+                font-size: 14px;
+
+                span {
+                    font-weight: bold;
+                }
+                div {
+                    width: 100%;
+                }
+            }
+        }
+        .action {
+            width: calc(50% - 21px);
+            float: left;
+            border-top: 2px solid #fbfbfb;
+            border-right: 1px solid #fbfbfb;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 10px;
+            color: #d4c9b1;
+            font-size: 12px;
+        }
+        .action.last {
+            border-right: none;
+            border-left: 1px solid #fbfbfb;
+        }
+    }
+    .descWrapper {
+        .info {
+            @media screen and (min-width : 1024px) {
+                height: 150px;
+            }
+            .description{
+                padding-bottom: 10px;
+            }
+            .label {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .clearFix {
+        clear: both;
+    }
+}

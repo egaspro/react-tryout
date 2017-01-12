@@ -1,0 +1,31 @@
+.layout {
+    width: 100%;
+    background-color: #fbfbfb;
+    
+    .loading, 
+    .noData {
+        background-color: #fbfbfb;
+        bottom: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+
+        @media screen and (min-width: 1024px) {
+            margin-left: auto;
+            margin-right: auto; 
+            width: 1024px;
+        }
+
+        span {
+            font-size: 40px;
+            position: absolute;
+            top: 50%;
+            left: 43%;
+        }
+    }
+    .noData {
+        span {
+            left: 34%;
+        }
+    }
+}

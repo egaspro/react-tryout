@@ -1,0 +1,25 @@
+.layout {
+    width: 100%;
+    background-color: #fbfbfb;
+
+    .layout-header {
+        width: 100%;
+        height: 20px;
+        background-color: #fff;      
+        font-size: 20px;
+        padding-bottom: 20px;
+        padding-top: 10px;
+        text-align: center;
+    }
+    .loading {
+        height: 20px;
+        padding: 15px;
+        text-align: center;
+    }
+    .noData {
+        height: 20px;
+        padding: 15px;
+        text-align: center;
+    }
+}
+
